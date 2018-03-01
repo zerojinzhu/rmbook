@@ -1,0 +1,146 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.mask{		/*遮罩层的实现*/
+	width: 100%;
+	height: 1112px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	filter: alpha(opacity=50);
+	background: gray;
+	z-index: 100;
+	display: none;
+	transition: opacity .5s ease;
+}
+.outer-container{		/*书本详情的页面*/
+	/*width: 894px;
+	height: 886px;*/
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	margin-left: -443px;
+	position: absolute;
+	left: 50%;
+	top: 63px;
+	background: white;
+	opacity: 1;
+	z-index: 200;
+	display: none;
+	transition: width .5s ease;
+	/*   这个地方感觉用了还是没有过渡效果 width的修改是在js里面  */
+}
+
+.book-detail{
+	width: 894px;
+	height: 886px;
+	position: relative;
+	overflow: hidden;	
+}
+.close{		
+    width: 68px;
+    height: 68px;
+    background: url("../images/close1.png");
+    cursor: pointer;
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+.novel-detail{
+	height: 696px;
+	width: 762px;
+	margin: 101px auto 0;
+	position: relative;
+}
+.book-cover{
+	width: 266px;
+	height: 368px;
+	margin: 60px 60px 30px 60px;
+	float: left;
+}
+.book-cover img{
+	width: 266px;
+	height: 368px;
+}
+
+.basic-detail{
+	width: 190px;
+	height: 368px;
+	margin: 60px 0 30px;
+	float: left;
+}
+.basic-detail dd img{
+	margin: 0 5px;
+}
+.basic-detail h1{
+	font-size: 30px;
+	margin-left: 60px;
+	color: #040404;
+}
+.basic-detail div{
+	margin: 20px 0;	
+}
+.basic-detail dl{
+	/*height: 20px;*/
+	margin: 5px;
+	display: block;
+	line-height: 20px;
+}
+.basic-detail dl dt{
+	float: left;
+	display: block;
+	width: 20px;
+	height: 20px;	
+	padding: 0 5px;
+	margin-right: 5px;
+	border-right: 1px solid gray;
+}
+.basic-detail dl dd{
+
+}
+.basic-detail dl dd a{
+	/**/
+	color: black;
+	font-size: 14px;
+	text-decoration: none;
+}
+dd ul{
+	float: right;
+	list-style: none;
+}
+div.ad{
+	padding-top: 20px;
+}
+
+.introduce{
+	clear: both;
+	margin: 0 60px 60px;
+	font-size: 12px;
+	color: #2a2827;
+	word-wrap: break-word;
+	overflow:hidden;
+}
+.introduce h5{
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.left-top-border{
+	width: 94px;
+	height: 94px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-top: 2px solid gray;
+	border-left: 2px solid gray;
+}
+.right-bottom-border{
+	width: 94px;
+	height: 94px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-bottom: 2px solid gray;
+	border-right: 2px solid gray;
+}

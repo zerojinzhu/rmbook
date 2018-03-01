@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<title>搜索页</title>
+<!-- 这里是页面的基本样式 -->
+<link rel="stylesheet" type="text/css" href="css/searchweb.css">
+<!-- 这是弹出书的详情的基本样式 -->
+<link rel="stylesheet" type="text/css" href="css/book-detail.css">
+<!-- 书本详情弹出事件和关闭事件 -->
+<script src="js/book-detail.js"></script>
+</head>
+<body>
+    <div class="main">
+        <!-- 整个header写的是上边的导航栏，包括搜索框和logo还有分类 -->
+        <div class="header">
+            <div class="logo">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请搜索" class="search-keyword" name="">
+                <button type="submit" class="icon-search"></button>
+            </div>
+            <div class="category">
+                <a href="#">分类</a>
+                <ul>
+                    <li><a href="#">分类1</a></li>
+                    <li><a href="#">分类2</a></li>
+                    <li><a href="#">分类3</a></li>
+                    <li><a href="#">分类4</a></li>
+                    <li><a href="#">分类5</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <!-- top装的是中间的部分，搜索的东西 -->
+            <div class="top">
+                <div class="search-tags"><span>搜索的东西</span></div>
+            </div>
+            <!-- footer写了书和页面跳转 -->
+            <div class="footer">
+
+                <div class="foo-cen">
+                    <!-- 这个div装着8本书的框，里面每个book-info都“装”一本书 -->
+                    <div class="books-info-box">
+                        <div class="book-info">
+                            <a href="#" class="book-img" onclick="openDetail()">
+                                <img src="images/cover.png">
+                            </a>
+                            <span class="start">
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="white"></i>
+                                <i class="white"></i>
+                            </span>
+                            <span><a href="#">书名</a></span>
+                            <span><a href="#">作者</a></span>
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="book-img">
+                                <img src="images/cover.png">
+                            </a>
+                            <span class="start">
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="white"></i>
+                                <i class="white"></i>
+                            </span>
+                            <span><a href="#">书名</a></span>
+                            <span><a href="#">作者</a></span>
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="book-img">
+                                <img src="images/cover.png">
+                            </a>
+                            <span class="start">
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="white"></i>
+                                <i class="white"></i>
+                            </span>
+                            <span><a href="#">书名</a></span>
+                            <span><a href="#">作者</a></span>
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="book-img">
+                                <img src="images/cover.png">
+                            </a>
+                            <span class="start">
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="white"></i>
+                                <i class="white"></i>
+                            </span>
+                            <span><a href="#">书名</a></span>
+                            <span><a href="#">作者</a></span>
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="book-img">
+                                <img src="images/cover.png">
+                            </a>
+                            <span class="start">
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="white"></i>
+                                <i class="white"></i>
+                            </span>
+                            <span><a href="#">书名</a></span>
+                            <span><a href="#">作者</a></span>
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="book-img">
+                                <img src="images/cover.png">
+                            </a>
+                            <span class="start">
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="white"></i>
+                                <i class="white"></i>
+                            </span>
+                            <span><a href="#">书名</a></span>
+                            <span><a href="#">作者</a></span>
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="book-img">
+                                <img src="images/cover.png">
+                            </a>
+                            <span class="start">
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="white"></i>
+                                <i class="white"></i>
+                            </span>
+                            <span><a href="#">书名</a></span>
+                            <span><a href="#">作者</a></span>
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="book-img">
+                                <img src="images/cover.png">
+                            </a>
+                            <span class="start">
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="black"></i>
+                                <i class="white"></i>
+                                <i class="white"></i>
+                            </span>
+                            <span><a href="#">书名</a></span>
+                            <span><a href="#">作者</a></span>
+                        </div>
+                    </div>
+                    <!-- page是下面的显示页数 -->
+                    <div class="page">
+                        <span>
+                            <a href="#"><</a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">...</a>
+                            <a href="#">n</a>
+                            <a href="#">></a>
+                        </span>
+                        <span>共x页</span>
+                    </div>
+                    <!-- outer-container是弹出的书本详情，遮罩层在后面 -->
+                    <div class="outer-container" id="detailcon">
+                            <div class="book-detail">
+                                <div class="close" id="close"></div>
+                                <div class="novel-detail">
+                                    <div class="left-top-border"></div>
+                                    <div class="book-cover">
+                                        <a href="#"><img src="images/bookcover.png"/></a>
+                                    </div>
+                                    <div class="basic-detail">
+                                        <h1>书名</h1>
+                                        <div>
+                                            <dl>
+                                                <dt><a href="#"><img src="images/作者.png"/></a></dt>
+                                                <dd><a href="#">作者</a></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt><a href="#"><img src="images/出.png"/></a></dt>
+                                                <dd><a href="#">出版社</a></dd>
+                                            </dl>
+                                        </div>
+                                        <div>
+                                            <dl>
+                                                <dt><a href="#"><img src="images/时间.png"/></a></dt>
+                                                <dd><a href="#">出版时间</a></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt><a href="#"><img src="images/图书馆.png"/></a></dt>
+                                                <dd><a href="#">图书馆藏书：</a>
+                                                    <ul>
+                                                        <li><a href="#">x本 </a></li>
+                                                        <li><a href="#">x楼x架xx</a></li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="ad">
+                                            <dl>
+                                                <dt>
+                                                <a href="#"><img src="images/书1.png"/></a></dt>
+                                                <dd>
+                                                    <a href="#"><img src="images/豆瓣.png"></a>
+                                                    <a href="#"><img src="images/知乎.png"></a>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>
+                                                <a href="#"><img src="images/购买.png"/></a></dt>
+                                                <dd>
+                                                    <a href="#"><img src="images/京东.png"></a>
+                                                    <a href="#"><img src="images/当当.png"></a>
+                                                    <a href="#"><img src="images/亚马逊.png"></a>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="introduce">
+                                        <h5>作者简介</h5>
+                                        <p><pre>    作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。</pre></p>
+                                    </div>
+                                    <div class="introduce">
+                                        <h5>书籍简介</h5>
+                                        <p><pre>    这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。</pre></p>
+                                    </div>
+                                    <div class="right-bottom-border"></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- mask是遮罩层 -->
+                <div class="mask" id="mask"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

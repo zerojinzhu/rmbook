@@ -1,0 +1,233 @@
+
+*{
+	margin: 0;
+	padding: 0;
+    font-family:"Microsoft YaHei";
+}
+div.mian{
+    height: 1500px;
+    margin: auto;
+    overflow: hidden;
+}
+/*头部的css*/
+.header{
+    height: 54px;
+    width: 1280px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.logo{
+    width: 72px;
+    height: 35px;
+    background: url(../images/small-logo.png);
+    margin: 9px 0 0 184px;
+    background-size: cover;
+    display: block;
+    float: left;
+}
+/*头部中间的搜索框*/
+div.search{
+    width: 261px;
+    height: 27px;
+    border: 1px solid #a4a4a4;
+    margin: 10px 0 0 0;
+    border-radius: 13px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+div.search input.search-keyword{
+    width: 215px;
+    height: 27px;
+    border: 0;
+    margin: 0;
+    display: inline-block;
+    padding: 0 33px 0 13px;
+    outline: 0;
+}
+div.search button.icon-search{
+    width:25px;
+    height:27px;
+    background: url(../images/search.png);
+    position: absolute;
+    right: 5px;
+    top:0;
+    border: none;
+    outline: none;
+    z-index: 111;
+}
+/*右边的分类*/
+div.category{
+    width: 85px;
+    height: 29px;
+    float: right;
+    position: relative;
+    margin: 12px 154px 0 0;
+}
+div.category ul li{
+    width: 85px;
+    height: 29px;
+    float: none;
+}
+div.category a{
+    width: 85px;
+    height: 29px;
+    line-height: 29px;
+    text-decoration: none;
+    display: block;
+    text-align:center;
+    background: #dcd79d;
+    border: 1px solid black;
+    color: #636045;
+}
+div.category a:hover{
+    color: black;
+}
+div.category ul{
+    /*display:none;*/
+    position: absolute;
+    width: 85px;
+    color: rgb(128,42,42);
+    list-style: none;
+}
+/*div.category:hover ul{
+    display:block;
+}
+*/
+/*本来打算用dispaly的方法隐藏
+后面觉得用scale的数值为0好像也可以
+
+不知道那个比较好？？？
+*/
+.category ul {  /*这里写出下拉菜单慢慢下拉的样式*/
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+}
+.category:hover ul{
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+}
+/*下面的部分*/
+.center{
+    width: 100%;
+    height: 1446px;
+    background: #f4f4f4;
+    clear: both;
+    overflow: hidden;
+}
+.top{
+    height: 192px;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+    text-align: center;
+}
+.search-tags{
+    width: 156px;
+    padding: 0 75px;
+    margin: auto;
+    border-bottom: 1px solid gray;
+}
+.search-tags span{
+    text-align: center;
+    display: inline-block;
+    margin: 93px auto 16px;
+    width: 156px;
+    height: 40px;
+    line-height: 40px;
+    background: #e3dfb4;   
+}
+/*搜索的书本*/
+.footer{
+    height: 1053px;
+    width: 100%;
+     position: relative;
+}
+.foo-cen{
+    height: 1053px;
+    width: 1040px;
+    margin: auto;
+    background: white;
+}
+.books-info-box{
+    width: 1040px;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;   
+    background: white;
+}
+.book-info{
+    width: 201px;
+    margin: 0 19px;
+    text-align: center;
+    color: black;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+a.book-img img{
+    width: 201px;
+    height: 276px;
+}
+.book-info span.start{
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+}
+.book-info span.start i{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+}
+span i.black{
+    background: url(../images/黑.png);
+}
+span i.white{
+    background: url(../images/白.png);
+}
+.book-info span:last-child{
+    border-bottom: 1px solid #a4a4a4;
+    width: 100px;
+}
+.book-info span a{
+    color: black;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*下面的显示页数*/
+.page{
+    width: 1040px;
+    height: 62px;
+    text-align: center;
+    background: white;
+}
+.page span{
+    display: block;
+    padding-bottom: 10px;
+}
+.page a{
+    font-size: 16.08px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.page a:hover{
+    color: ;
+}

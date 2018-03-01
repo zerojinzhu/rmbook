@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>推书网</title>
+    <link rel="stylesheet" type="text/css" href="vtmer-appraisals/book-mock.js">
+    <link rel="stylesheet" type="text/css" href="css/mainweb.css">
+    <script src="js/submit.js"></script>
+    <script type="text/javascript" src="vtmer-appraisals/book-mock.js"></script>
+
+<!--——————————————————————————————————————————————
+    |布局建议用flex+少量定位，
+    |因为居中和等距分布的东西较多
+    |js帮你debug了
+    |还需修改地方：
+    |   中间内容物的分布修改（搜索框等）
+    |    登陆框细节（背景透明度，字体粗细等）
+    |
+    |apple注
+    —————————————————————————————————————————————— -->
+</head>
+<body>
+<div class="main">
+    <div id="icon"  class="login-icon" >
+        <button id="btnlogin"  class="login-btn"></button>
+    </div>
+
+<!-- /*修改处*/ -->
+
+    <div class="mainContentBox">
+        <div class="logo">
+            <img src="images/纯logo.png" class="logo_img" alt="">
+            <p>The books that know you</p>
+        </div>
+
+        <div class="search">
+            <form>
+                <input type="text" class="search-keyword" placeholder="搜索"  name="" />
+                <a class="search-submit" id="searchbtn" href="searchweb.html"></a>
+            </form>
+        </div>
+        <div class="category">
+            <div class="cate_center">
+                <form action="" >
+                    <button type="button" >大类1</button>
+                    <button type="button" >大类2</button>
+                    <button type="button" >大类3</button>
+                    <button type="button" >大类4</button>
+                 </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
